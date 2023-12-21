@@ -1,0 +1,11 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+#imagenResultado {
+    max-width: 300px;
+    max-height: 200px;
+    margin-top: 20px;
+}

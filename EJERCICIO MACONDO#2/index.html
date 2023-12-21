@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macondo</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <h1>VIAJE A MACONDO</h1>
+    <label for="">Ingresa el día de la semana</label>
+    <input type="text" id="dias"><button onclick="diasSemana()">Verificar Día</button>
+    <br><br>
+    <label for="">Ingresa tu salario</label>
+    <input type="number" id="dinero"><button onclick="dineroGanado()">Verificar Salario</button>
+    <div id="resultado"></div>
+    <figure id="macondo">
+        <img src="https://librujula.publico.es/wp-content/uploads/2021/08/macondo1.jpg" alt="">
+    </figure>
+    <h2>Elige una opción de comida</h2>
+    <form id="seleccionMenu">
+        <label for="opciones">Opciones</label>
+        <select name="opciones" id="opciones">
+            <option id="almohabana" value="almohabana">Almohabana</option>
+            <option id="subway" value="subway">Subway</option>
+            <option id="nada" value="nada">No comprar nada</option>
+        </select>
+        <br><br>
+
+        <input type="button" value="Comprar" onclick="mostrarMenu()">
+        <img id="imagenResultado" src="" alt="">
+    </form>
+    <div id="resultado2"></div>
+    <p id="saldoActual">Saldo Actual: $<span id="saldoNumero">2500000</span></p>
+    <h2>Medidas de la Maleta</h2>
+    <h3>Tu maleta no cumple con las medidas estándares del aeropuerto, debes ingresar las medidas de tu maleta y con algo de magia las adaptaremos a las medidas reglamentarias</h3>
+    <button onclick="ajustarMaleta()">Calcular Nuevas Medidas</button>
+    <p id="resultado3"></p>
+    <h2>WiFi del Aeropuerto</h2>
+    <h3>Aparte de que debes descubrir la contraseña, debes pagar 50.000 mil pesos la hora de wifi, pero te lo puse a un clic, sigue con tu viaje</h3>
+    <button onclick="obtenerContrasenaWiFi()">Obtener Contraseña WiFi</button>
+    <p id="resultado4"></p>
+    <h2>Dialecto de Macondo</h2>
+    <h3>Parece que todos en Macondo hablan con la i, por favor adapta tu vocabulario para que te puedas comunicar con los demás</h3>
+    <button onclick="obtenerIdioma()">Cambiar Idioma</button>
+    <p id="resultado4"></p>
+    <h2>Piedra, Papel o Tijera</h2>
+    <h3>El taxista te reto a un juego si ganas no debes pagar nada, pero si pierdes debes pagar 300 mil pesos</h3>
+    <button onclick="juego()">Jugar</button>
+    <p id="resultado4"></p>
+    <p id="resultado5"></p>
+    <h2>Hildebrando en Macondo</h2>
+    <h3>!!FELICITACIONES!! Por fin llegaste a tu destino, te espera un montón de actividades para realizar todos los días, por favor elige con ciudado tu vestimenta y mucha suerte</h3>
+    <button onclick="realizarSiguienteDia()">Avanzar al siguiente día</button>
+    <script src="./script.js"></script>
+</body>
+</html>
